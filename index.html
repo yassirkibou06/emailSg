@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMAIL</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+        a {
+            text-decoration: none;
+            color: black;
+            padding-top: 1em;
+        }
+        table {
+            margin: 5em 5em;
+            padding: 1em 2em;
+            position: relative;
+            width: 50%; 
+            box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2); 
+            border-radius: 10px;
+        }
+        table::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 5%;
+            width: 100px;
+            height: 100%;
+            border-radius: 0px 0px 200px 200px;
+            background-color: orange;
+            z-index: -1;
+        }
+        table::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 10px;
+            height: 100%;
+            border-radius: 0px 0px 200px 200px;
+            background-color: orange;
+            z-index: -1;
+        }
+        img {
+            width: 200px; 
+            height: 200px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-right: 1em; 
+        }
+    </style>
+</head>
+<body>
+    <table >
+        <tbody style="display: grid; grid-template-columns: 1fr 390px;">
+            <tr>
+                <td>
+                    <img src="https://i.postimg.cc/kgMz28Kx/pexels-italo-melo-2379005.jpg" alt="">
+                </td>
+                <td style="border: 1px solid orange; background-color: orange; border-radius: 10px;"></td>
+            </tr>
+            <tr style="display: flex; flex-direction: column; justify-content: start; padding-left: 1em;">
+                <td style="padding-top: 1em;font-size: 1.5rem; font-weight: bold;">Yassir Kibou</td>
+                <td style="padding-top: 0.50em;font-size: 0.90rem; font-weight: 400; color: gray;">Front End Developer</td>
+                <td style=" font-weight: 500; font-size: 1em;">
+                    <a href="mailto:yassirkibou06gmail.com" style="display: flex; align-items: center;">
+                        <img style="background-color: orange; border: 1px solid orange; border-radius: 20px; padding: 0.8em 0.1em; width: 20px; height: 20px;" src="https://i.postimg.cc/CKqN5LPG/email.png" alt="">
+                        example@gmail.com
+                    </a>
+                </td>
+                <td style=" font-weight: 500; font-size: 1em;">
+                    <a href="tel:0670467076" style="display: flex; align-items: center;">
+                        <img style="background-color: orange; border: 1px solid orange; border-radius: 20px; padding: 0.8em 0.1em; width: 20px; height: 20px;" src="https://i.postimg.cc/XYTfR6jp/phone-call.png" alt="">
+                        +212 670467076
+                    </a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
